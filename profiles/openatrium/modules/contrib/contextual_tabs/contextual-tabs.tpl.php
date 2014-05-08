@@ -4,6 +4,15 @@
  * Provides view for contexual tabs.
  *
  */
+  
+
+  // update eCoursity
+  global $user;
+  if(!in_array('authenticated user', $user->roles)) {
+     return;
+  } else 
+
+
 ?>
 <ul id="contextual-tabs">
   <?php foreach ($buttons as $button): ?>
