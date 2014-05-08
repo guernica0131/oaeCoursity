@@ -212,15 +212,6 @@
  */
 $databases = array();
 
- $databases['default']['default'] = array(
-      'driver' => 'mysql',
-      'database' => 'oa-bak',
-      'username' => 'openatrium',
-      'password' => 'revolution',
-      'host' => '127.0.0.1',
-      'prefix' => '',
-   );
-
 /**
  * Access control for update.php script.
  *
@@ -294,9 +285,6 @@ $drupal_hash_salt = '';
  */
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 100);
-
-
-ini_set('memory_limit', '256M');
 
 /**
  * Set session lifetime (in seconds), i.e. the time from the user's last visit
