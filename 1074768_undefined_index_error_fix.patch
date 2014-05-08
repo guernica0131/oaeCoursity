@@ -1,5 +1,4 @@
-profiles/openatrium/modules/contrib/views/includes/view.inc
-diff --git a/includes/view.inc b/includes/view.inc
+diff --git a/includes/view.inc b/includes/view.inc profiles/openatrium/modules/contrib/views/includes/view.inc
 index d8c0c1f..94911f7 100644
 --- a/includes/view.inc
 +++ b/includes/view.inc
