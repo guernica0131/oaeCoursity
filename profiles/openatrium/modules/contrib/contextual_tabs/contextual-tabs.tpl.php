@@ -4,6 +4,8 @@
  * Provides view for contexual tabs.
  *
  */
+
+
 ?>
 <ul id="contextual-tabs">
   <?php foreach ($buttons as $button): ?>

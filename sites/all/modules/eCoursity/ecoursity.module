@@ -1,0 +1,6 @@
+
+<?php
+
+function contextual_tabs_preprocess_page_alter(&$variables) {
+	dpr("WORK");
+}

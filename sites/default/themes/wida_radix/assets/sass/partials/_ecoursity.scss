@@ -1,0 +1,14 @@
+.navbar-inner {
+    .menu {
+        //padding-bottom: -5;
+        li.leaf {
+            //margin-bottom: -10 !important;
+            
+            a {
+                &:hover {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
