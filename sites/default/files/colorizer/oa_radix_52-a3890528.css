@@ -1,0 +1,149 @@
+body,
+body.overlay {
+  color: #3b3b3b;
+}
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+#page,
+#main-wrapper,
+#main-menu-links li a.active,
+#main-menu-links li.active-trail a {
+  background: #ffffff;
+}
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.form-actions {
+  background-color: #ffffff;
+}
+#header,
+.navbar-inner,
+.navbar-inner .panel-panel,
+.navbar-inverse .navbar-inner {
+background-color: #0d608c;
+background-image: -moz-linear-gradient(top, #80aebd, #0d608c);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#80aebd), to(#0d608c));
+background-image: -webkit-linear-gradient(top, #80aebd, #0d608c);
+background-image: -o-linear-gradient(top, #80aebd, #0d608c);
+background-image: linear-gradient(to bottom, #80aebd, #0d608c);
+border: none;
+box-shadow: none;
+color: #fffeff;
+}
+.navbar-inner .btn,
+.navbar-inverse .btn.btn-inverse,
+.btn-group > .btn .dropdown-toggle,
+#oa-user-badge .user-badge {
+background-color: #80aebd;
+background-image: -moz-linear-gradient(top, #0d608c, #80aebd);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d608c), to(#80aebd));
+background-image: -webkit-linear-gradient(top, #0d608c, #80aebd);
+background-image: -o-linear-gradient(top, #0d608c, #80aebd);
+background-image: linear-gradient(to bottom, #0d608c, #80aebd);
+box-shadow: none;
+border-color: #0d608c;
+color: #fffeff;
+}
+.oa-space-menu .navbar-inner {
+  background-image: none;
+}
+.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse,
+.navbar-inner ul#oa_breadcrumb .btn,
+.navbar-inverse #oa-user-badge .user-badge,
+.navbar-inverse #toolbar-menu-button {
+  color: #fffeff;
+}
+.navbar-inverse .nav > li > a,
+.navbar .nav > li > a {
+  color: #fffeff;
+  background-color: transparent !important;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus {
+  color: #fff;
+}
+.navbar .nav > .active > a:hover,
+.navbar .nav > li > a:hover {
+  color: #80aebd;
+}
+ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
+.navbar-inner a.dropdown-toggle.btn {
+  background-color: #80aebd !important;
+}
+#oa-navbar .panel-panel .panel-pane {
+  border-color: #0d608c ! important;
+}
+.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse .caret,
+.navbar-inner .caret {
+border-top: 6px solid #fffeff;
+border-right: 6px solid transparent;
+border-left: 6px solid transparent;
+}
+a {
+  color: #005886;
+}
+a:hover,
+a:focus {
+  color: #80aebd;
+}
+a:active {
+  color: #fff;
+}
+.sidebar .block {
+  background-color: #ffffff;
+  border-color: #fff;
+}
+#page-wrapper,
+#footer-wrapper,
+body #footer {
+  background-color: #80aebd;
+}
+
+#page-wrapper a,
+#footer-wrapper a,
+body #footer a {
+  color: #fffeff;
+}
+
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
+.oa-banner-overlay,
+.oa-banner-slogan-overlay {
+  color: #fffeff;
+}
+.oa-banner-text,
+.oa-banner-slogan {
+  color: #fffeff;
+}
+.oa-pane .pane-title {
+color: #3b3b3b;
+background-color: #ffffff;
+background-image: -moz-linear-gradient(top, #ffffff, #80aebd);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#80aebd));
+background-image: -webkit-linear-gradient(top, #ffffff, #80aebd);
+background-image: -o-linear-gradient(top, #ffffff, #80aebd);
+background-image: linear-gradient(to bottom, #ffffff, #80aebd);
+}
+.oa-pane .panel-pane {
+color: #3b3b3b;
+background-color: #ffffff;
+border-color: #fff;
+}
+.oa-pane {
+border-color: #fff;
+}
+#oa-navbar .panel-panel .pane-oa-navigation,
+#oa-navbar .panel-panel .pane-oa-space-banner {
+background-color: #f1f6fa;
+}

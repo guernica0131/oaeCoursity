@@ -1,0 +1,1 @@
+window.tinyMCEPreInit = {"base":"\/openatrium\/profiles\/openatrium\/libraries\/tinymce\/jscripts\/tiny_mce","suffix":"","query":""};
