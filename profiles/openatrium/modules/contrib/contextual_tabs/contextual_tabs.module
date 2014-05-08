@@ -83,8 +83,6 @@ function _contextual_tabs_links($new_tabs_links = array()) {
 }
 
 function contextual_tabs_preprocess_page(&$variables) {
-  //dpr("here");
-  //return;
   $pages = variable_get('contextual_tabs_pages', '');
   $current = current_path();
   if (!drupal_match_path($current, $pages)) {

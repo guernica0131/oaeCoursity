@@ -811,39 +811,15 @@ function media_file_default_displays_alter(&$file_displays) {
     $file_displays['video__preview__file_field_file_default']->status = FALSE;
   }
 
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'video__preview__file_field_media_large_icon';
-  $file_display->weight = 50;
-  $file_display->status = TRUE;
-  $file_display->settings = '';
-  $file_displays['video__preview__file_field_media_large_icon'] = $file_display;
-
   // Audio previews should be displayed using a large filetype icon.
   if (isset($file_displays['audio__preview__file_field_file_default'])) {
     $file_displays['audio__preview__file_field_file_default']->status = FALSE;
   }
 
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'audio__preview__file_field_media_large_icon';
-  $file_display->weight = 50;
-  $file_display->status = TRUE;
-  $file_display->settings = '';
-  $file_displays['audio__preview__file_field_media_large_icon'] = $file_display;
-
   // Document previews should be displayed using a large filetype icon.
   if (isset($file_displays['document__preview__file_field_file_default'])) {
     $file_displays['document__preview__file_field_file_default']->status = FALSE;
   }
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'document__preview__file_field_media_large_icon';
-  $file_display->weight = 50;
-  $file_display->status = TRUE;
-  $file_display->settings = '';
-  $file_displays['document__preview__file_field_media_large_icon'] = $file_display;
 }
 
 /**

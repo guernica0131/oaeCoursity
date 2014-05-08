@@ -1231,39 +1231,37 @@ class view extends views_db_object {
       // Initialize the style plugin.
       $this->init_style();
 
-      if (!empty($this->result)) {
-        // Give field handlers the opportunity to perform additional queries
-        // using the entire resultset prior to rendering.
-        if ($this->style_plugin->uses_fields()) {
-          foreach ($this->field as $id => $handler) {
-            if (!empty($this->field[$id])) {
-              $this->field[$id]->pre_render($this->result);
-            }
+      // Give field handlers the opportunity to perform additional queries
+      // using the entire resultset prior to rendering.
+      if ($this->style_plugin->uses_fields()) {
+        foreach ($this->field as $id => $handler) {
+          if (!empty($this->field[$id])) {
+            $this->field[$id]->pre_render($this->result);
           }
         }
+      }
 
-        $this->style_plugin->pre_render($this->result);
+      $this->style_plugin->pre_render($this->result);
 
-        // Let modules modify the view just prior to rendering it.
-        foreach (module_implements('views_pre_render') as $module) {
-          $function = $module . '_views_pre_render';
-          $function($this);
-        }
+      // Let modules modify the view just prior to rendering it.
+      foreach (module_implements('views_pre_render') as $module) {
+        $function = $module . '_views_pre_render';
+        $function($this);
+      }
 
-        // Let the themes play too, because pre render is a very themey thing.
-        foreach ($GLOBALS['base_theme_info'] as $base) {
-          $function = $base->name . '_views_pre_render';
-          if (function_exists($function)) {
-            $function($this);
-          }
-        }
-        $function = $GLOBALS['theme'] . '_views_pre_render';
+      // Let the themes play too, because pre render is a very themey thing.
+      foreach ($GLOBALS['base_theme_info'] as $base) {
+        $function = $base->name . '_views_pre_render';
         if (function_exists($function)) {
           $function($this);
         }
-
-        $this->display_handler->output = $this->display_handler->render();
       }
+      $function = $GLOBALS['theme'] . '_views_pre_render';
+      if (function_exists($function)) {
+        $function($this);
+      }
+
+      $this->display_handler->output = $this->display_handler->render();
       if ($cache) {
         $cache->cache_set('output');
       }
@@ -2023,7 +2021,7 @@ class view extends views_db_object {
       unset($this->query);
     }
 
-    $keys = array('current_display', 'display_handler', 'build_info', 'built', 'executed', 'attachment_before', 'attachment_after', 'field', 'argument', 'filter', 'sort', 'relationship', 'header', 'footer', 'empty', 'query', 'result', 'inited', 'style_plugin', 'plugin_name', 'exposed_data', 'exposed_input', 'many_to_one_tables');
+    $keys = array('current_display', 'display_handler', 'build_info', 'built', 'executed', 'attachment_before', 'attachment_after', 'field', 'argument', 'filter', 'sort', 'relationship', 'header', 'footer', 'empty', 'query', 'result', 'inited', 'style_plugin', 'plugin_name', 'exposed_data', 'exposed_input', 'many_to_one_tables', 'dom_id');
     foreach ($keys as $key) {
       if (isset($this->$key)) {
         unset($this->$key);
